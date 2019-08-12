@@ -30,9 +30,9 @@ sudo make install
 popd
 
 pushd .
-wget -O portaudio.tgz https://www.portaudio.com/archives/pa_stable_v190600_20161030.tgz
-tar -xzvf portaudio.tgz
+git clone https://git.assembla.com/portaudio.git portaudio
 cd portaudio
+git checkout 396fe4b
 ./configure
 make
 sudo make install
